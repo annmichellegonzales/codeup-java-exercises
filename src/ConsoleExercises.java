@@ -7,9 +7,9 @@ public class ConsoleExercises {
 //        double pi = 3.14159;
 //        System.out.format("The value of pi is: %.2f%n", pi);
 //
-//
+////
 //        Scanner sc = new Scanner(System.in);
-//        System.out.println("Please enter an integer.");
+//        System.out.print("Please enter an integer:");
 //        Integer yourInt = sc.nextInt();
 //        sc.nextLine();
 //        System.out.println("Your integer is: " + yourInt);
@@ -38,18 +38,27 @@ public class ConsoleExercises {
         // with the next() method, only Here will be displayed in the result
         // using nextLine() will display the entire sentence.
 
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Please enter the length and width of the Codeup Classroom");
+//        Integer width = sc.nextInt();
+//        sc.nextLine();
+//        Integer length = sc.nextInt();
+//        System.out.format("The perimeter of the room is: " + ((width + width) + (length + length)) + "\n");
+//        System.out.format("The area of the room is: " + length * width);
+
+
+        // to parse integers, we can use:
+        // double length = Double.parseDouble(lengthInput);
+        // double width = Double.parseDouble(widthInput);
+        // int length = Integer.parseInt(lengthInput);
+
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter the length and width of the Codeup Classroom");
-        Integer width = sc.nextInt();
-        sc.nextLine();
-        Integer length = sc.nextInt();
-        System.out.format("The perimeter of the room is: " + ((width + width) + (length + length)) + "\n");
-        System.out.format("The area of the room is: " + length * width);
+        sc.useDelimiter("-");
+        String first = sc.next();
+        String second = sc.next();
+        String third = sc.next();
 
-
-
-
-
+        System.out.println(first + second + third);
 
 
 
