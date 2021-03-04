@@ -1,28 +1,39 @@
-import java.util.stream.IntStream;
+import java.util.Scanner;
+//import java.util.stream.IntStream;
 public class ControlFlowExercises {
 
     public static void main(String[] args) {
 
-        int input = 0;
+//        Scanner sc = new Scanner(System.in);
+//
+//        int begin = 1;
+//
+//        System.out.println("What number would you like to go up to?");
+//        int yourInt = sc.nextInt();
+//
+//        if (begin >= yourInt) {
+//            System.out.print("number | squared | cubed \n" + begin + "      |  " + begin + "      | " + begin + "\n" +
+//                    begin++ + "|" + Math.pow(begin,2) + "|" + Math.pow(begin,3));
+//        }
 
-        while (input <= 100) {
 
-            input++;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("What number would you like to go up to?");
+        int yourInt = sc.nextInt();
 
 
-            if (input % 15 == 0) {
-                System.out.println("FizzBuzz");
-            }
-            if (input % 3 == 0) {
-                System.out.println("Fizz");
-            }
-            if (input % 5 == 0) {
-                System.out.println("Buzz");
-            }
-            if (input <= 100)
-                System.out.println(String.valueOf(input++));
+        System.out.print("number\t \t |" + "squared\t \t \t |" + "cubed\n -----------------------------------------\n");
 
+        for ( int count = 1 ; count <= yourInt ; count++)
+        {
+            int squared = count * count;
+            int cubed = count * count * count;
+            System.out.println(count + "\t \t \t | " + squared + "\t \t \t \t| " + cubed);
         }
+
+
+
     }
 
 }
