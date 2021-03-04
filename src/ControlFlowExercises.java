@@ -5,16 +5,24 @@ public class ControlFlowExercises {
 
         int input = 0;
 
-        if (input % 15 == 0) {
-            System.out.println("FizzBuzz");
-        }
-        if (input % 3 == 0) {
-            System.out.println("Fizz");
-        }
-        if (input % 5 == 0) {
-            System.out.println("Buzz");
-        }
-        System.out.println(String.valueOf(input));
+        while (input <= 100) {
 
+            input++;
+
+
+            if (input % 15 == 0) {
+                System.out.println("FizzBuzz");
+            }
+            if (input % 3 == 0) {
+                System.out.println("Fizz");
+            }
+            if (input % 5 == 0) {
+                System.out.println("Buzz");
+            }
+            if (input <= 100)
+                System.out.println(String.valueOf(input++));
+
+        }
     }
+
 }
