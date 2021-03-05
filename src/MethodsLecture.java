@@ -27,7 +27,7 @@ public class MethodsLecture {
          *  */
 
         public static void takeInName(String name1, String name2) {
-            System.out.println("Hello " + name1 + " and " + name2 + " o/");
+            System.out.println("Hello " + name1 + " and " + name2 + " ");
             return;
 
         }
