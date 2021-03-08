@@ -14,23 +14,20 @@ public class Bob {
 
             String sure = ("Sure?");
             System.out.println(sure);
+
         } else if (supBob.endsWith("!")) {
 
             String chill = "Whoa, chill out!";
             System.out.println(chill);
 
-        }
-//        else if (supBob.) {
-//            String fine = "Fine. Be that way!";
-//            System.out.println(fine);
-//
-//        }
-        else if (supBob.equals(" ")) {
+        } else if (supBob.equals(" ")) {
             String whatever = "Whatever.";
             System.out.println(whatever);
 
+        } else {
+            String fine = "Fine. Be that way!";
+            System.out.println(fine);
         }
-
 
     }
 
