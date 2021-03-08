@@ -5,6 +5,6 @@
 .idea/*
 *.iml
 
-# Compiled output
+# Compiled outputgit
 *.class
 out/*

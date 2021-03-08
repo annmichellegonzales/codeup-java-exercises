@@ -9,7 +9,6 @@ public class MethodsExercises {
         multiplication(20, 10);
         division(6, 2);
         modulus(9, 3);
-//        getInteger(min, max);
 
     }
 
@@ -34,11 +33,5 @@ public class MethodsExercises {
         System.out.println(x % y);
     }
 
-//    public static int getInteger(int min, int max) {
-//        Scanner sc = new Scanner(System.in);
-//        System.out.print("Enter a number between 1 and 10: ");
-//
-//        int userInput = getInteger(1, 10);
-//    }
 
 }
