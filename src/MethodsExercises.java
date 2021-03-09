@@ -142,13 +142,15 @@ public class MethodsExercises {
 
         System.out.println("Would you like to roll again?");
         String again = sc.next();
-        if (again.equals("yes")) {
-            diceRoll();
-        } else {
+        if (again.equals("no")) {
             System.out.println("Thanks for playing!");
+        } else {
+            diceRoll();
         }
 
     }
+
+
 
 }
 
