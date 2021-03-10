@@ -5,8 +5,9 @@ public class DishTest {
         dish1.costInCents = 1499;
         dish1.nameOfDish = "Chicken Gyro Platter";
         dish1.wouldRecommend = true;
-
         dish1.printSummary();
+
+
 
 
     }

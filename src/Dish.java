@@ -12,9 +12,5 @@ public class Dish {
 
     }
 
-    public void printSummary() {
-        System.out.printf(flipRecommendation);
-
-    }
 
 }
