@@ -5,9 +5,9 @@ public class Dish {
     private boolean wouldRecommend;
 
     public Dish() {
-        this.costInCents = costInCents;
-        this.nameOfDish = nameOfDish;
-        this.wouldRecommend = wouldRecommend;
+        this.costInCents = 1399;
+        this.nameOfDish = "Chicken Gyro Platter";
+        this.wouldRecommend = true;
     }
 
 
