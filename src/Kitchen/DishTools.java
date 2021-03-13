@@ -1,13 +1,12 @@
-public class DishTools {
-    public static void main(String[] args) {
+package Kitchen;
 
 //        public static boolean flipRecommend(){
-//            return Dish.dish1.wouldRecommend;
+//            return Kitchen.Dish.dish1.wouldRecommend;
 //        }
 
 
 //        public static int AVERAGE_COST_OF_DISH_IN_CENTS = 1300;
-//        String shoutDishName = System.out.println(Dish.nameOfDish.toUppercase);
+//        String shoutDishName = System.out.println(Kitchen.Dish.nameOfDish.toUppercase);
 
 
 
@@ -18,6 +17,6 @@ public class DishTools {
 //            dish.wouldRecommend = !dish.wouldRecommend;
 //        }
 
-    }
 
-}
+
+

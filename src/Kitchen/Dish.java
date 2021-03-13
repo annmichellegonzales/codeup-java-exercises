@@ -1,3 +1,5 @@
+package Kitchen;
+
 public class Dish {
 
     private int costInCents;
@@ -46,14 +48,14 @@ public class Dish {
     }
 }
 
-//public class Dish {
+//public class Kitchen.Dish {
 //
 //    private int costInCents;
 //    private String nameOfDish;
 //    private boolean wouldRecommend;
 //    private static int AVERAGE_COST_OF_DISH_IN_CENTS;
 //
-//    public Dish(costInCents, String nameOfDish, boolean wouldRecommend) {
+//    public Kitchen.Dish(costInCents, String nameOfDish, boolean wouldRecommend) {
 //        this.costInCents = 1499;
 //        this.nameOfDish = "Chicken Gyro Platter";
 //        this.wouldRecommend = true;
