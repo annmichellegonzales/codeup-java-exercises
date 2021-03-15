@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Input {
 
+    public static Object toLowerCase;
     private Scanner scanner;
 
     public Input() {
