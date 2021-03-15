@@ -7,20 +7,18 @@ public class Input {
     private Scanner scanner;
 
     public Input() {
+
         this.scanner = new Scanner(System.in);
     }
 
     public String getString() {
+
         return scanner.nextLine();
     }
 
     public boolean yesNo() {
         String input = scanner.next();
-        if (input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes")) {
-            return true;
-        } else {
-            return false;
-        }
+        return input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes");
     }
 
     public int getInt() {
@@ -33,25 +31,27 @@ public class Input {
         }
     }
 
-//    public int getInt(int min, int max) {
-//        int userInt = getInt();
-//        if(userInt >= min && userInt <= max) {
-//            return userInt;
+    public double getDouble() {
+        if(scanner.hasNextDouble()) {
+            return scanner.nextDouble();
+        } else {
+            System.out.println("Invalid double. Please enter a double.");
+            scanner.nextLine();
+            return getDouble();
+        }
+    }
+
+//    public getDouble(double min, double max) {
+//        double userDouble = getDouble();
+//        if (userDouble >= min && userDouble <= max) {
+//            return userDouble;
 //        } else {
-//            System.out.println("Out of range. Please enter a number between " + min + " and " + max);
-//            getInt(min, max);
+//            System.out.println("Out of range; please enter a number between " + min + " and " + max);
+//            return getDouble(min, max);
 //        }
 //    }
 
-//    public void getDouble(double min, double max) {
-//        double userDouble = getDouble(min, max);
-//        if(userDouble >= min && userDouble <= max) {
-//            return userDouble;
-//        } else {
-//            System.out.println("Our of range; please enter a number between " + min + " and " + max);
-//        }
-//
-//    }
+
 
 
 
@@ -66,27 +66,25 @@ public class Input {
 //    double getDouble()
 
     public static void main(String[] args) {
+        System.out.println("Hello, and welcome to my class. What's your name?");
         Input input = new Input();
-//        String userInput= input.getString();
-//        System.out.println(userInput);
-//        System.out.println("Would you like to continue?");
-//        boolean willContinue = input.yesNo();
-//        if (willContinue) {
-//            System.out.println("Continuing...");
-//        } else {
-//            System.out.println("Exiting...");
-//        }
+        String userInput= input.getString();
+        System.out.println("Hi, " + userInput);
+        System.out.println("Would you like to continue?");
+        boolean willContinue = input.yesNo();
+        if (willContinue) {
+            System.out.println("Continuing...");
+        } else {
+            System.out.println("Exiting...");
+        }
 
-//        System.out.println("Please enter an integer.");
-//        int userInt = input.getInt();
-//        System.out.println("Your int is: " + userInt);
-//
+        System.out.println("Please enter a double.");
+        double userDouble = input.getDouble();
+        System.out.println("Your lucky double is: " + userDouble);
+
 //        System.out.println("Please enter a double");
-//        double userDouble = input.getDouble;
-//        System.out.println("Your double is: " + userDouble);
-//
-//
-
+//        double userDouble = input.getDouble(1, 5);
+//        System.out.println("Your lucky double is: " + userDouble);
 
     }
 
