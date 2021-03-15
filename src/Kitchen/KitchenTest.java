@@ -23,6 +23,10 @@ public class KitchenTest {
 
         Ingredient j = new Jelly();
         j.throwAway();
+        System.out.println(j.getCalories());
+//        j.calories = 125;
+//        System.out.println(j.calories);
+
 
         Ingredient b = new Bread();
         b.throwAway();
