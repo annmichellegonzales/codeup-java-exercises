@@ -1,24 +1,18 @@
 package Animals;
 
-import Animals.Dog;
-import Animals.Wolf;
 import java.util.Scanner;
+
+import static Animals.AnimalTools.getCanineDetails;
+import static Animals.AnimalTools.getFelineDetails;
+
+
 public class AnimalApp {
     public static void main(String[] args) {
-        AnimalTools.getCanineDetails();
+
+        System.out.println("Hello, and welcome to my 4-legged Friends Center, where we love all animals. :D Let's get started!");
+        getCanineDetails();
+        getFelineDetails();
+        System.out.println("Come again next time to learn more >^.^<");
+
     }
 }
-//    public static void getDetails() {
-//        Dog dog = new Dog("Bork! Bork!", "Large", "Canis Lupus Familiaris",
-//                "German Shepherd Dog", "Black and Tan");
-//        Wolf wolf = new Wolf("Hoooowwwwwwlll!", "Medium", "Canis Lupus Occidentalis",
-//                "Northwestern Wolf", false, "North America");
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Input 'dog' or 'wolf' to know its details: ");
-//        String input = scanner.nextLine().toLowerCase();
-//        if (input.equals("dog")) {
-//            dog.printDetails();
-//        } else {
-//            wolf.printDetails();
-//        }
-//    }

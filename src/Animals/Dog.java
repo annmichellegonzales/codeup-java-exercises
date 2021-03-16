@@ -32,7 +32,7 @@ public class Dog extends Canine {
         printDelimiter();
         printSubSpecies();
         printCommonName();
-        printSize();
+//        printSize();
         printFurColor();
         printDelimiter();
     }

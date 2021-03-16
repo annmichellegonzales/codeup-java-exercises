@@ -31,8 +31,8 @@ public abstract class Canine implements Describable{
         System.out.printf("Common Name: %s\n", this.commonName);
     }
 
-    public void printSize() {
-        System.out.printf("Size: %s\n", this.size);
-    }
+//    public void printSize() {
+//        System.out.printf("Size: %s\n", this.size);
+//    }
 
 }

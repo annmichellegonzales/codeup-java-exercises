@@ -38,7 +38,7 @@ public class Wolf extends Canine {
         printSubSpecies();
         printCommonName();
         printNativeArea();
-        printSize();
+//        printSize();
         printEndangeredStatus();
         printDelimiter();
     }
