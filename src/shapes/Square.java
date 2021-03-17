@@ -18,5 +18,4 @@ public class Square extends Quadrilateral {
         return length * 4;
     }
 
-
 }

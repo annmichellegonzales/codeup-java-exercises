@@ -89,4 +89,7 @@ public class Input {
 
     }
 
+    public int getInt(int i) {
+            return 0;
+    }
 }

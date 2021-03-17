@@ -12,7 +12,8 @@ public class ShapesTest {
         System.out.println(myShape.getArea());
 
         myShape.setLength(11);
-        System.out.println();
+        System.out.println(myShape.getArea());
+        System.out.println(myShape.getPerimeter());
 
         myShape = new Rectangle(6,8);
         System.out.println(myShape.getPerimeter());

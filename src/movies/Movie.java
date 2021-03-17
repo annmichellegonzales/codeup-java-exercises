@@ -1,31 +1,22 @@
 package movies;
 
-//class Movie {
-//
-//    private String name;
-//    private String category;
+public class Movie {
 
-//    public Movie() { this.category = "horror"; }
+    private String name;
+    private String category;
 
-//    public String shareMovie() { return category; }
+    public Movie(String name, String category) {
+        this.name = name;
+        this.category = "horror";
+    }
 
 
 
-//    public Movie(String name, String category) {
-//        this.name = name;
-//        this.category = category;
-//
-//    }
+    public Object getName() {
+        return name;
+    }
 
-//    public String shareMovie(String title) {
-//        String myMovie = this.name("Titanic");
-//        System.out.println();
-//    }
-//
-//    public static void main(String[] args) {
-//
-//        shareMovie();
-//
-//    }
-//
-//}
+    public String getCategory() {
+        return category;
+    }
+}
