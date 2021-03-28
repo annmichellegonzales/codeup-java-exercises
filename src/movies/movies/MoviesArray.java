@@ -1,8 +1,8 @@
 package movies;
 
 public class MoviesArray {
-    public static Movie[] findAll() {
-        return new Movie[]{
+    public static movies.Movie[] findAll() {
+        return new movies.Movie[]{
                 new Movie("Citizen Kane", "drama"),
                 new Movie("Casablanca", "drama"),
                 new Movie("The Godfather", "drama"),

@@ -1,6 +1,7 @@
 package movies;
 
-import util.Input;
+
+import java.util.Scanner;
 
 public class MoviesApplication {
 
@@ -16,6 +17,8 @@ public class MoviesApplication {
         }
     }
 
+
+
     private static boolean executeUserChoice(int choice) {
         boolean continueRunning = true;
 
@@ -24,7 +27,7 @@ public class MoviesApplication {
                 continueRunning = false;
                 break;
             case 1:
-                for (Movie movie : MoviesArray.findAll()) {
+                for (Movie movie : movies.MoviesArray.findAll()) {
                     System.out.println("\n");
                     System.out.printf("%s-- %s", movie.getName(), movie.getCategory());
                     System.out.println("\n");
@@ -56,7 +59,7 @@ public class MoviesApplication {
     }
 
     private static void viewMoviesByCategory(String category) {
-        for (Movie movie : MoviesArray.findAll()) {
+        for (Movie movie : movies.MoviesArray.findAll()) {
             if (movie.getCategory().equalsIgnoreCase(category)) {
                 System.out.printf("%s -- %s\n", movie.getName(), movie.getCategory());
             }
@@ -78,11 +81,9 @@ public class MoviesApplication {
     }
 
     private static int promptUserForChoice() {
-
-        Input input = new Input();
         System.out.println("Enter your choice: ");
-        int response = input.getInt(0);
-
+        Scanner sc = new Scanner(System.in);
+        int response = sc.nextInt();
         return response;
     }
 
